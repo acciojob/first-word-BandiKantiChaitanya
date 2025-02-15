@@ -1,16 +1,16 @@
 function firstWord(s) {
   // your code here
-	char=' '
+  char=' '
   let res=''
-  let space=s.indexOf(char)
+  let trimmedText=s.trim()
+  let space=trimmedText.indexOf(char)
   if(space>0){
   for(i=0;i<space;i++){
-      res+=s[i]
+      res+=trimmedText[i]
   }}else{
       return s
   }
-  return res
-	
+  return res 
 }
 
 // Do not change the code below
